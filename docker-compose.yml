@@ -1,0 +1,10 @@
+services:
+  remnawave-subscription-page:
+    image: replicant1337/subscription-page:latest
+    container_name: subscription_page
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - '3010:3010'
+

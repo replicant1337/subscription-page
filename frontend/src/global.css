@@ -1,0 +1,76 @@
+html,
+body {
+    min-height: 100vh;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.015em;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.4;
+    text-transform: lowercase;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    height: 100vh;
+}
+
+.header-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid transparent;
+}
+
+.logo-text-highlight {
+    color: #0070F0;
+}
+
+.logo-text-normal {
+    color: white;
+}
+
+.info-card-blue, .info-card-cyan, .info-card-violet, .info-card-green, .info-card-red, .info-card-yellow, .info-card-teal, .info-card-orange {
+    background: #1C1C1E !important;
+    border: 1px solid transparent !important;
+}
+
+/* Mantine Modals & Popovers */
+.mantine-Modal-content, 
+.mantine-Modal-header,
+.mantine-Menu-dropdown,
+.mantine-Drawer-content,
+.mantine-Drawer-header {
+    background-color: #1C1C1E !important;
+    color: #FFFFFF !important;
+    border: 1px solid transparent !important;
+}
+
+.mantine-Modal-overlay,
+.mantine-Drawer-overlay {
+    backdrop-filter: blur(8px) !important;
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1C1C1E;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2C2C2E;
+}
